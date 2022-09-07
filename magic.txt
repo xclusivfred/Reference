@@ -1,0 +1,30 @@
+create filename.mgc then add the following lines into it
+
+#!/bin/bash
+0 string FILENAME Filename data
+!:mime Filename
+
+eg:
+
+#!/bin/bash
+0 string ALFRED Alfred data
+!:mime Alfred
+
+
+Then on Ur terminal run
+
+ file -C -m filename.mgc
+ to convert to magic file
+
+After that run 
+chmod u+x school.mgc 
+to execute the file 
+
+then run
+cp /bin/ls .
+ls -la
+file --mime-type -m filename.mgc *
+file -m filename.mgc *
+
+
+Then you  add, commit and push
